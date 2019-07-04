@@ -1,0 +1,51 @@
+http://localhost:8080/geoserver/SIG/wms?service=WMS&version=1.1.0&request=GetMap&layers=SIG:Communes_2004,SIG:Communes_2004&bbox=-17.10453235521868%2C20.769810023988725%2C-1.0027793869999861%2C35.922503446038625&width=640&height=480&srs=EPSG%3A4326&format=image/jpeg
+
+
+
+
+get map pour provinces sur l'espace de travail SIG :
+resolution : 768*765
+
+
+http://localhost:8080/geoserver/SIG/wms?service=WMS&version=1.1.0&request=GetMap&layers=SIG:provinces_maroc,SIG:provinces_maroc&bbox=-720015.0%2C-1034422.0%2C910940.0%2C591083.0&width=768&height=765&srs=EPSG%3A26191&format=image/jpeg
+
+resolution : 640*480
+
+http://localhost:8080/geoserver/SIG/wms?service=WMS&version=1.1.0&request=GetMap&layers=SIG:provinces_maroc,SIG:provinces_maroc&bbox=-720015.0%2C-1034422.0%2C910940.0%2C591083.0&width=640&height=480&srs=EPSG%3A26191&format=image/jpeg
+
+http://localhost:8080/geoserver/SIG/wms?service=WMS&version=1.1.0&request=GetMap&layers=SIG:provinces_maroc,SIG:provinces_maroc&bbox=-720015.0%2C-1034422.0%2C910940.0%2C591083.0&width=640&height=480&srs=EPSG%3A26191&format=GML
+
+get feature provinces :
+http://localhost:8080/geoserver/SIG/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=SIG%3Aprovinces_maroc&maxFeatures=50
+
+
+
+
+
+
+get map pour provinces sur l'espace de travail Cont (resolution : 640*480) :
+
+http://localhost:8080/geoserver/Cont/wms?service=WMS&version=1.1.0&request=GetMap&layers=Cont:provinces_maroc,Cont:provinces_maroc&bbox=-720015.0%2C-1034422.0%2C910940.0%2C591083.0&width=640&height=480&srs=EPSG%3A26191&format=image/jpeg
+
+
+
+http://localhost:8080/geoserver/Cont/wms?service=WMS&version=1.1.0&request=GetMap&layers=Cont:provinces_maroc,Cont:provinces_maroc&bbox=-720015.0%2C-1034422.0%2C910940.0%2C591083.0&width=640&height=480&srs=EPSG%3A26191&format=image/jpeg
+
+
+http://localhost:8080/geoserver/cite/wcs?service=WCS&version=1.0.0&request=GetCoverage&coverage=cite:geotiff_coverage&styles=&bbox=-720015.0%2C-1034422.0%2C910940.0%2C591083.0&width=640&height=480&srs=EPSG%3A4326&format=png
+
+Couche provinces et couches routes superposées
+
+http://localhost:8080/geoserver/Cont/wms?service=WMS&version=1.1.0&request=GetMap&layers=Cont:provinces_maroc,Cont:routes_maroc&styles=&bbox=-5.715316115004553,30.639514245645895,-3.6323921009776456,32.564701013030540002899169922&width=768&height=722&srs=EPSG:4326&format=application/openlayers
+
+provinces : format GML
+http://localhost:8080/geoserver/Cont/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Cont:provinces_maroc&maxFeatures=50
+
+
+
+
+
+
+
+requete : styles
+http://localhost:8080/geoserver/rest/styles/population.sld
